@@ -1,0 +1,124 @@
+/* Container styling */
+.todo-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Title */
+.todo-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Create component wrapper */
+.create-wrapper {
+  margin-bottom: 25px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888;
+  font-style: italic;
+}
+
+.empty-state h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Todo List Container */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Individual Todo Item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: #f8f9fa;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.todo-item:hover {
+  background: #f1f3f5;
+  border-color: #dcedc8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Checkbox/Icon Toggle */
+.todo-action {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: transform 0.1s ease;
+}
+
+.todo-action:active {
+  transform: scale(0.9);
+}
+
+.icon-checked {
+  color: #2b8a3e;
+}
+
+.icon-unchecked {
+  color: #adb5bd;
+}
+
+/* Todo Text */
+.todo-text {
+  flex: 1;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  word-break: break-word;
+  transition: color 0.2s ease;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #adb5bd;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fa5252;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin-left: auto;
+}
+
+.delete-btn:hover {
+  background: #fff5f5;
+  color: #e03131;
+}
